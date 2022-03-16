@@ -5,16 +5,16 @@ steps:
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME']
- # Deploy container image to Cloud Run
- - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-   entrypoint: gcloud
-   args:
-   - 'run'
-   - 'deploy'
-   - 'admin-portal-stage'
-   - '--image'
-   - 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME'
-   - '--region'
-   - '${_LOCATION}'
- images:
- - 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME' 
+#  # Deploy container image to Cloud Run
+#  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#    entrypoint: gcloud
+#    args:
+#    - 'run'
+#    - 'deploy'
+#    - 'admin-portal-stage'
+#    - '--image'
+#    - 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME'
+#    - '--region'
+#    - '${_LOCATION}'
+#  images:
+#  - 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME' 
