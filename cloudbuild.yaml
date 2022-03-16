@@ -1,4 +1,3 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/admin-portal-1-344115/admin-portal', '.']
-images: ['gcr.io/admin-portal-1-344115/build']
+  args: [ 'build', '-t', 'gcr.io/admin-portal-1-344115/admin-portal', '.' ]
