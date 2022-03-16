@@ -16,5 +16,8 @@ steps:
    - 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME'
    - '--region'
    - '${_LOCATION}'
- images:
- - 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME' 
+   - '--platform'
+   - 'managed'
+   - '--allow-unauthenticated'
+#  images:
+#  - 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME' 
