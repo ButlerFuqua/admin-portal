@@ -14,4 +14,4 @@ steps:
   - '--region'
   - '${_LOCATION}'
 images:
-- 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME' 
+- 'us-east4-docker.pkg.dev/$PROJECT_ID/builds/admin-portal:$TAG_NAME'
